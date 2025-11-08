@@ -5,6 +5,9 @@
 ### Overview
 This dataset contains **782 earthquake records**. The Global Earthquake-Tsunami Risk Assessment Dataset is a comprehensive, machine learning-ready dataset containing seismic characteristics and tsunami potential indicators for 782 significant earthquakes recorded globally from 2001 to 2022. This dataset is specifically designed for tsunami risk prediction, earthquake analysis, and seismic hazard assessment applications.
 
+## key-question
+does the conditions present in a earth quake determine if a tsunami is present and if so can i use a model to predict the chance of a tsunami occuring given conditions
+
 ### Feature Descriptions
 
 | Feature     | Type     | Description                                  | Range/Values                 | Tsunami Relevance                         |
@@ -269,6 +272,9 @@ This analysis of 782 major earthquakes (magnitude ≥6.5) demonstrates that tsun
 The absence of fault type data represents a fundamental limitation of this dataset. However, the consistent finding that ~60% of earthquakes with favorable magnitude, depth, and location characteristics fail to generate tsunamis provides strong indirect evidence that **fault mechanism is the primary discriminating factor** between tsunami and non-tsunami earthquakes.
 
 Research from NOAA and the University of Hawaii (SOEST) confirms the physical mechanisms underlying these patterns: vertical fault movement (thrust/reverse) is necessary for water displacement, and shallow ruptures transfer energy to water more efficiently than deep ruptures due to differences in crustal rigidity and the mechanics of wave generation. Understanding the complete physics of earthquake rupture—including the direction and magnitude of seafloor displacement—is essential for accurate tsunami prediction and hazard assessment.
+
+## ansewr to my question
+the conditions present in the dataset can only partially indicate whether a tsunami is likely to occur, the available variables successfully identify scenarios with favorable tsunami-generating conditions. However, this dataset is missing a critical variable: fault type. Because the mechanism of fault movement (specifically, vertical displacement) is essential to determining whether an earthquake can produce a tsunami, the absence of this information prevents the development of a model using this dataset alone.
 
 ## Sources
 - NOAA - Tsunami Generation from Earthquakes: https://www.noaa.gov/jetstream/tsunamis/tsunami-generation-earthquakes
